@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .jar{
+                 text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap:30px;
+                flex-direction: column;
+            }
+            .Square {
+            width: 150px;
+            height: 150px;
+            background-color:rgb(172, 40, 161);
+            margin: 100px auto;
+            animation: Square 2s linear infinite;
+            }
+        @keyframes Square {
+           from {
+            transform: rotate(0deg);
+            }
+           to {
+            transform: rotate(360deg);
+            }
+         }
+        </style>
+    </head>
+    <body>
+        <div class="jar">
+        <h2 style="font-family: 'Times New Roman', Times, serif;font-style: oblique;color: rgb(182, 102, 12);text-align: center;font-size: xx-large;">
+            A Square that Continuously rotates 360°</h2>
+        <div class="Square"></div>
+        </div>
+    </body>
+</html>

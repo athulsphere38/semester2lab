@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height:100vh;
+                margin:0;
+            }
+            .jar{
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap:30px;
+                flex-direction: column;
+            }            
+            .Circle{
+                width:100px;
+                height:100px;
+                background-color: rgb(50, 72, 170) ;
+                border-radius: 50%;
+                position:relative;
+                animation-name: Rotate;
+                animation-duration: 4.5s;
+                animation-timing-function: ease;
+                animation-iteration-count: infinite;
+            }
+            @keyframes Rotate {
+                0%{
+                    top:0;
+                    left:0;
+                    transform:rotate(0deg) translateX(0px);
+                }
+                100% {
+                   top: 0;
+                   left: 0;
+                   transform: rotate(360deg) translateX(100px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class = jar>
+        <h1 style="font-family: 'Times New Roman', Times, serif;font-style: oblique;color:purple;text-align: center;font-size: xx-large;"> 
+            Moving Rotating Circle</h1>
+        <p style="font-size: x-large;font-style: oblique;">The ball move horizontally and rotate at the same time</p>
+        <div class ="Circle"></div>
+        </div>
+    </body>
+</html>
