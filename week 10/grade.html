@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Grade Calculator</title>
+    <script>
+        function calculateGrade() {
+            let m1 = parseFloat(prompt("Enter marks for Subject 1:"));
+            let m2 = parseFloat(prompt("Enter marks for Subject 2:"));
+            let m3 = parseFloat(prompt("Enter marks for Subject 3:"));
+            let m4 = parseFloat(prompt("Enter marks for Subject 4:"));
+            let m5 = parseFloat(prompt("Enter marks for Subject 5:"));
+            let m6 = parseFloat(prompt("Enter marks for Subject 6:"));
+
+            let average = (m1 + m2 + m3 + m4 + m5 + m6) / 6;
+            let grade;
+
+            if (average < 60)
+                grade = "F";
+            else if (average < 70)
+                grade = "D";
+            else if (average < 80)
+                grade = "C";
+            else if (average < 90)
+                grade = "B";
+            else
+                grade = "A";
+
+            alert("Average Marks: " + average.toFixed(2) +
+                  "\nGrade: " + grade);
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="calculateGrade()">Calculate Grade</button>
+
+</body>
+</html>

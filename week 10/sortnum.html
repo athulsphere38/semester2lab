@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sort Three Numbers</title>
+</head>
+<body>
+
+<script>
+function sortNumbers() {
+    let a = parseFloat(prompt("Enter first number:"));
+    let b = parseFloat(prompt("Enter second number:"));
+    let c = parseFloat(prompt("Enter third number:"));
+
+    if (a > b) {
+        let temp = a;
+        a = b;
+        b = temp;
+    }
+
+    if (a > c) {
+        let temp = a;
+        a = c;
+        c = temp;
+    }
+
+    if (b > c) {
+        let temp = b;
+        b = c;
+        c = temp;
+    }
+
+    alert("Numbers in ascending order: " + a + ", " + b + ", " + c);
+}
+
+sortNumbers();
+</script>
+
+</body>
+</html>

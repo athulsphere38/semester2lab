@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Largest of Five Numbers</title>
+    <script>
+        function findLargest() {
+            let a = parseFloat(prompt("Enter first number:"));
+            let b = parseFloat(prompt("Enter second number:"));
+            let c = parseFloat(prompt("Enter third number:"));
+            let d = parseFloat(prompt("Enter fourth number:"));
+            let e = parseFloat(prompt("Enter fifth number:"));
+
+            let largest = a;
+
+            if (b > largest)
+                largest = b;
+            if (c > largest)
+                largest = c;
+            if (d > largest)
+                largest = d;
+            if (e > largest)
+                largest = e;
+
+            alert("Largest number is: " + largest);
+        }
+    </script>
+</head>
+<body>
+
+    <button onclick="findLargest()">Find Largest Number</button>
+
+</body>
+</html>
